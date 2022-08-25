@@ -1,0 +1,5 @@
+- crear react app con create-react-app
+- armar Dockerfile.dev
+- crear la imagen: docker build -f Dockerfile.dev -t ruido/reactdev . (el punto es el contexto del dockerfile)
+- correr la imagen: docker run -d --name react-app -p 80:3000 -v /app/node_modules -v $(pwd):/app ruido/reactdev 
+-- crear volume: ignorar /node_modules en el volumen
