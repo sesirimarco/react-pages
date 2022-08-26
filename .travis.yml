@@ -8,3 +8,14 @@ before_install:
 script: 
   - docker run -e CI=true ruido/react-dev npm run test
 
+deploy: 
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "react-app"
+  env: "Reactapp-env"
+  bucket_name: "elasticbeanstalk-us-east-1-940634547974"
+  bucket_path: "react-app"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_ACCESS"
+  on:
+    branch: main
