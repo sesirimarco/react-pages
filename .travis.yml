@@ -3,8 +3,7 @@ services:
   - docker
 
 before_install: 
-  - docker build -f Dockerfile.dev -d ruido/react-dev .
+  - docker build -f Dockerfile.dev -t ruido/react-dev .
 
 script: 
   - docker run -e CI=true ruido/react-dev npm run test
-  
