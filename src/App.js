@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className='App-logo' alt='logo' />
         <p>\_(*-*)-/</p>
         <p>\_(o-0)-/</p>
+        <p>Some more changes</p>
         <a
           className='App-link'
           href='https://reactjs.org'
