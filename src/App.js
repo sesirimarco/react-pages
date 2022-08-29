@@ -6,7 +6,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>Test github pages deploy</p>
+        <p>\_(*-*)-/</p>
         <p>\_(o-0)-/</p>
         <a
           className='App-link'
